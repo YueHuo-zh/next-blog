@@ -1,0 +1,65 @@
+.main {
+    margin: 0 auto;
+    width: 1250px;
+    height: 100vh;
+    margin-top: 115px;
+}
+
+.text-box {
+    width: 1000px;
+    margin: 0 auto;
+    .hello {
+        font-size: 44px;
+    }
+    .name {
+        font-size: 76px;
+    }
+    .question {
+        font-size: 42px;
+    }
+    .answer {
+        font-size: 28px;
+    }
+    .hobby {
+        font-size: 48px;
+    }
+    .maxim {
+        font-size: 30px;
+    }
+}
+  
+
+.text-box-item {
+    margin-left: 0px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.icon-box {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.icon-box-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.color-517FE8 {
+    color: #517FE8;
+}
+.color-c0c0c0 {
+    color: #c0c0c0;
+}
+.color-57C3DC {
+    color: #57C3DC;
+}
+.color-3177C5 {
+    color: #3177C5;
+}
+.color-C85008 {
+    color: #C85008;
+}
