@@ -1,6 +1,7 @@
 /* CSS 初始化 */
 :root {
   --bg: #181818;
+  /* --bg: #fff; */
   --text-color: #c0c0c0;
 }
 * {
@@ -66,14 +67,14 @@
   
   /* 按钮 */
   button {
-    background-color: #0d6efd; /* 蓝色按钮背景 */
+    background-color: none; /* 蓝色按钮背景 */
     color: #ffffff; /* 白色文字 */
-    padding: 10px 20px;
+    padding: 5px 10px;
     border: none;
     cursor: pointer;
   }
   button:hover {
-    background-color: #0b5ed7; /* 按钮悬停效果 */
+    background-color: #333;
   }
 
   .container {
