@@ -1,6 +1,7 @@
 import styles from "./navigation.module.css"
 import NButton from "../NButton/NButton";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
     const navLinks = [
@@ -41,7 +42,7 @@ export default function Navigation() {
         <div className={ styles.nav }>
             <div className={ styles['nav-bar'] }>
                 <div className={ styles.logo } >
-                    <img className={styles['logo-img']} />
+                    <Image className={styles['logo-img']} src={"https://vip.helloimg.com/i/2024/05/18/66485adccd6ca.png"} alt="Logo" width={40} height={40} />
                     <span className={ styles['logo-text'] }>月火</span>
                 </div>
                 <div className={ styles['nav-link'] }>

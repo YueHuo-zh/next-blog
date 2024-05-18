@@ -1,11 +1,13 @@
-.text-button {
-    a:hover {
-        color: #4684e0;
-    }
+.text-button a:hover {
+    color: #4684e0;
 }
 
-.normal-button {
-    a:hover {
-        color: #fff;
-    }
+.normal-button a:hover {
+    color: #fff;
+}
+
+.n-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@icon-park/react": "^1.4.2",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
@@ -19,8 +20,11 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/typed.js": "^2.0.9",
+    "@types/webpack": "^5.28.5",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "sass": "^1.77.2",
+    "svg-sprite-loader": "^6.0.11",
     "typescript": "^5"
   }
 }

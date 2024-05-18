@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from "react"
+import styles from './nbutton.module.css'
 
 type NButtonProps = {
     children?: React.ReactNode,
@@ -22,13 +23,14 @@ const NButton:React.FC<NButtonProps> = ({ children, onClick, width = '100px', he
     const [textStyle, setTextStyle] = useState({
         width: width,
         height: height,
-        border: 'none',
+        border: border ? '1px solid #444444' : 'none',
+        borderRadius : '7px',
         backgroundColor: '#181818',
     });
 
     const style = text ? textStyle : normalStyle;
     return (
-        <button style={style} className={ text ? `text-button` : `normal-button` } onClick={onClick}>{children}</button>
+        <button style={style} className={ `${text ? `text-button` : `normal-button`} ${styles['n-button']}` } onClick={onClick}>{children}</button>
     );
 }
 
