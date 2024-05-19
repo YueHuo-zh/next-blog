@@ -11,8 +11,13 @@ const nextConfig = {
         return config;
     },
     images: {
-        domains: ['vip.helloimg.com'],
-    },
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'vip.helloimg.com',
+          },
+        ],
+      },
 };
 
 export default nextConfig;

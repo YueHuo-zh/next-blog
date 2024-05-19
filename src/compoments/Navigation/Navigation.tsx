@@ -1,5 +1,5 @@
 import styles from "./navigation.module.css"
-import NButton from "../NButton/NButton";
+import NButton from "../Button/NButton/NButton";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -31,7 +31,7 @@ export default function Navigation() {
     const links = navLinks.map((item) => {
         return (
             <li key={item.name}>
-                <NButton border={true} text={true}>
+                <NButton text={true}>
                     <Link href={item.path}>{item.label}</Link>
                 </NButton>
             </li>

@@ -1,53 +1,21 @@
 'use client'
 
-import NButton from "@/compoments/NButton/NButton";
+import NButton from "@/compoments/Button/NButton/NButton";
+import RecentBlog from "@/compoments/HomePage/RecentBlog/RecentBlog";
+import TextBox from "@/compoments/HomePage/TextBox/TextBox";
 import styles from "./page.module.css";
-import { usePathname } from "next/navigation";
-import { useEffect, useRef } from "react";
-import Typed from "typed.js";
 import { Github, Tv } from "@icon-park/react";
+import IconBox from "@/compoments/HomePage/IconBox/IconBox";
 
 export default function Home() {
-  const pathname = usePathname();
-  const hello = useRef(null);
-  useEffect(() => {
-    const typed = new Typed(hello.current, {
-      strings: [
-        "好想睡觉啊！！",
-        "今天一定要早点睡T_T",
-      ],
-      typeSpeed: 100,
-      backSpeed: 150,
-      smartBackspace: false,
-      backDelay: 50,
-      loop: false,
-      cursorChar: '|',
-    });
-    return () => {
-      typed.destroy();
-    }
-  });
+
+  console.log(typeof Github)
+  const IconArray:Array<React.ReactNode> = [<Github key={0} size={ 25 } />, <Tv key={1} size={ 25 } />]
 
   return (
     <main className={styles.main}>
-      <div className={styles['text-box']}>
-        <div className={`${styles.hello} ${styles['text-box-item']}`}>
-          <span ref={hello}></span>
-        </div>
-        <div className={`${styles.name} ${styles['text-box-item']}`}>
-          <span>Hello, 这里是<span className={styles['color-517FE8']}>月火</span></span>
-        </div>
-        <div className={`${styles.question} ${styles['text-box-item']}`}>
-          <span>我是<span className={styles['color-517FE8']}> 全沾工程师 </span>😭。</span>
-        </div>
-        <div className={`${styles.hobby} ${styles['text-box-item']}`}>
-          <span>喜欢 <span className={styles['color-57C3DC']}>React</span>、<span className={styles['color-3177C5']}>TypeScript</span>、<span className={styles['color-C85008']}>Rust</span> ...</span>
-        </div>
-        <div className={`${styles.maxim} ${styles['text-box-item']}`}>
-          <span>喜欢吃嘉心糖😋</span>
-        </div>
-      </div>
-      <div className={styles['icon-box']}>
+      <TextBox />
+      {/* <div className={styles['icon-box']}>
         <div className={styles['icon-box-item']}>
           <NButton border={true} text={true} width="40px" height="40px">
             <Github color="#fff" size={25} />
@@ -58,7 +26,9 @@ export default function Home() {
             <Tv color="#fff" size={25} />
           </NButton>
         </div>
-      </div>
+      </div> */}
+      <IconBox icons={IconArray} />
+      <RecentBlog />
     </main>
   );
 }
