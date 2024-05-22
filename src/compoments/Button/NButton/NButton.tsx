@@ -18,6 +18,7 @@ const NButton:React.FC<NButtonProps> = ({ children, onClick, width = '100px', he
         height: height,
         border: border ? '1px solid #444444' : 'none',
         borderRadius : '7px',
+        backgroundColor: 'RGBA(0,0,0,0.1)',
     })
 
     const [textStyle, setTextStyle] = useState({
@@ -25,7 +26,7 @@ const NButton:React.FC<NButtonProps> = ({ children, onClick, width = '100px', he
         height: height,
         border: border ? '1px solid #444444' : 'none',
         borderRadius : '7px',
-        backgroundColor: '#181818',
+        backgroundColor: 'RGBA(0,0,0,0.1)',
     });
 
     const style = text ? textStyle : normalStyle;

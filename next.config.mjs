@@ -16,6 +16,10 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'vip.helloimg.com',
           },
+          {
+            protocol: 'https',
+            hostname: 'q1.qlogo.cn',
+          },
         ],
       },
 };

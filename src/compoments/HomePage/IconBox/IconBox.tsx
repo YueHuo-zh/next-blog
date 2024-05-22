@@ -1,10 +1,14 @@
 import NButton from "@/compoments/Button/NButton/NButton";
 import styles from "./iconbox.module.css"
 
+type Icons = {
+    icon: React.ReactNode,
+    onClick: () => void,
+}
+
 interface IconBoxProps {
-    icons: Array<React.ReactNode>
+    icons: Array<Icons>
     size ?: number | string
-    onClick ?: () => void | Function
 }
 
 const IconBox: React.FC<IconBoxProps> = ({ size = "40px", ...props }) => {
@@ -17,8 +21,8 @@ const IconBox: React.FC<IconBoxProps> = ({ size = "40px", ...props }) => {
         }
         return (
             <div className={styles['icon-box-item']} key={ index }>
-                <NButton border={true} text={true} width={ size } height={ size } onClick={ props.onClick } >
-                    { item }
+                <NButton border={true} text={true} width={ size } height={ size } onClick={ item.onClick } >
+                    { item.icon }
                 </NButton>
             </div>
         );

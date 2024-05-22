@@ -43,7 +43,9 @@ export default function Navigation() {
             <div className={ styles['nav-bar'] }>
                 <div className={ styles.logo } >
                     <Image className={styles['logo-img']} src={"https://vip.helloimg.com/i/2024/05/18/66485adccd6ca.png"} alt="Logo" width={40} height={40} />
-                    <span className={ styles['logo-text'] }>月火</span>
+                    <span className={ styles['logo-text'] }>
+                        <Link href={'/'}>31号避难所</Link>
+                    </span>
                 </div>
                 <div className={ styles['nav-link'] }>
                     <ul className={ styles['link-list'] }>

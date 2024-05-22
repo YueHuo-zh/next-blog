@@ -33,12 +33,17 @@
     height: 40px;
     width: 40px;
     margin-right: 10px;
+    border-radius: 100%;
 }
 
 .logo-text {
     font-size: 20px;
     color: white;
     cursor: pointer;
+}
+
+.logo-text a:hover {
+    color: #fff;
 }
 
 .link-list {
