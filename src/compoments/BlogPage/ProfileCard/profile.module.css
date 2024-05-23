@@ -2,7 +2,6 @@
     display: flex;
     align-items: start;
     justify-content: start;
-
     line-height: 100%;
 }
 
@@ -16,10 +15,12 @@
 }
 
 .board {
+    height: 100%;
+    line-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: start;
+    justify-content: center;
     margin: 5px 10px;
 }
 
@@ -27,17 +28,36 @@
     line-height: 100%;
     color: white;
     font-size: 1.45rem;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .description {
     line-height: 100%;
     color: rgb(177, 177, 177);
     font-size: 0.85rem;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .dashboard {
-    margin-bottom: 8px;
+    display: flex;
+    /* margin-bottom: 12px; */
     line-height: 100%;
+}
+
+.dashboard-item {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.dashboard-item:last-child .data::after {
+    content: "";
+}
+
+.data::after {
+    content: "|";
+    margin-left: 2rem;
 }

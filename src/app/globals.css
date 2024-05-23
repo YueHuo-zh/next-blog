@@ -80,6 +80,6 @@
   .container {
     margin: 0 auto;
     width: 1250px;
-    height: 90vh;
+    min-height: 90vh;
   }
   
