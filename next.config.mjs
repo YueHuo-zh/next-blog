@@ -20,7 +20,20 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'q1.qlogo.cn',
           },
+          {
+            protocol: 'https',
+            hostname: 'wakatime.com',
+          },
         ],
+      },
+      async redirects() {
+        return [
+          {
+            source: '/admin',
+            destination: '/',
+            permanent: true,
+          },
+        ]
       },
 };
 

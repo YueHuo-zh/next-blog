@@ -14,7 +14,6 @@ interface IconBoxProps {
 const IconBox: React.FC<IconBoxProps> = ({ size = "40px", ...props }) => {
     const icon = props.icons.map((item, index) => {
         if (size !== null && size !== undefined) {
-            console.log(typeof size);
             if (typeof size === 'number') {
                 size = size + 'px';
             }
