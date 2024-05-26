@@ -39,6 +39,68 @@ export default function BlogPage() {
                     </div>
                 </div>
             </div>
+            <div className={styles['blog-box']}>
+                <h1 className={styles['blog-data']}>2024年5月 第一周</h1>
+                <p>{ 'Ciallo～(∠・ω< )⌒☆' }</p>
+                <div className={styles['line']}></div>
+                <div className={styles['blog-list']}>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard>
+                            <>
+                                <p>t1t2</p>
+                                <p>s1s2</p>
+                                <p>q1q2</p>
+                            </>
+                        </BlogCard>
+                    </div>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard></BlogCard>
+                    </div>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard></BlogCard>
+                    </div>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard></BlogCard>
+                    </div>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard></BlogCard>
+                    </div>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard></BlogCard>
+                    </div>
+                </div>
+            </div>
+            <div className={styles['blog-box']}>
+                <h1 className={styles['blog-data']}>2024年5月 第一周</h1>
+                <p>{ 'Ciallo～(∠・ω< )⌒☆' }</p>
+                <div className={styles['line']}></div>
+                <div className={styles['blog-list']}>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard>
+                            <>
+                                <p>t1t2</p>
+                                <p>s1s2</p>
+                                <p>q1q2</p>
+                            </>
+                        </BlogCard>
+                    </div>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard></BlogCard>
+                    </div>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard></BlogCard>
+                    </div>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard></BlogCard>
+                    </div>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard></BlogCard>
+                    </div>
+                    <div className={styles['blog-list-item']}>
+                        <BlogCard></BlogCard>
+                    </div>
+                </div>
+            </div>
         </main>
     );
 }

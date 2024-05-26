@@ -42,7 +42,7 @@ const TextBox: React.FC<TextBoxProps> = ({ }) => {
                 <span>喜欢 <span className={styles['color-57C3DC']}>React</span>、<span className={styles['color-3177C5']}>TypeScript</span>、<span className={styles['color-C85008']}>Rust</span> ...</span>
             </div>
             <div className={`${styles.maxim} ${styles['text-box-item']}`}>
-                <span>{ '🖕🏼🥰 我爱这个世界' }</span>
+                <span>{ '🖕🏼🥰 Hello World.' }</span>
             </div>
         </div>
     );

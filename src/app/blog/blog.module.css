@@ -11,6 +11,7 @@
     -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
     -moz-column-gap: 20px; /* Firefox */
     column-gap: 20px; /* 列间距 */
+    margin-bottom: 40px;
 }
 
 .blog-list-item {
