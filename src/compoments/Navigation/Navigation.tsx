@@ -1,9 +1,19 @@
+'use client';
+
 import styles from "./navigation.module.css"
 import NButton from "../Button/NButton/NButton";
 import Link from "next/link";
 import Image from "next/image";
+import clsx from "clsx";
+import { usePathname } from "next/navigation";
 
 export default function Navigation() {
+
+    const pathname = usePathname();
+
+    console.log(pathname);
+    
+
     const navLinks = [
         {
             path: '/',
@@ -32,7 +42,7 @@ export default function Navigation() {
         return (
             <li key={item.name}>
                 <NButton text={true}>
-                    <Link href={item.path}>{item.label}</Link>
+                    <Link className={ clsx({ [styles.active]: item.path === pathname }) } href={item.path}>{item.label}</Link>
                 </NButton>
             </li>
         );

@@ -8,7 +8,7 @@
 
 .nav-bar {
     height: 100%;
-    width: 1250px;
+    width: 100%;
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
@@ -48,4 +48,8 @@
 
 .link-list {
     display: flex;
+}
+
+.active {
+    color: #4684e0;
 }

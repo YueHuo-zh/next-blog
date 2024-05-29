@@ -11,4 +11,6 @@ const dbConnect = async () => {
   mongoose.connect(`mongodb://${myDB.username}:${myDB.password}@${myDB.host}/${myDB.db}?authSource=admin`);
 }
 
-export default dbConnect;
+const url:string = `mongodb://${myDB.username}:${myDB.password}@${myDB.host}/${myDB.db}?authSource=admin`
+
+export default url;

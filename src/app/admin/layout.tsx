@@ -1,14 +1,14 @@
 import React from "react";
+import AdminLayout from "@/compoments/Layout/AdminLayout";
 
-export default function AdminLayout({
+export default function Layout({
     children
-} : Readonly<{
-    children : React.ReactNode
+}: Readonly<{
+    children: React.ReactNode
 }>) {
     return (
-        <div>
-            This is admin page.
-            { children }
-        </div>
+        <AdminLayout>
+            {children}
+        </AdminLayout>
     );
 }

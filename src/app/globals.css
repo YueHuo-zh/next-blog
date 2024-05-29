@@ -76,10 +76,4 @@
   button:hover {
     background-color: #333;
   }
-
-  .container {
-    margin: 0 auto;
-    width: 1250px;
-    min-height: 90vh;
-  }
   
