@@ -1,0 +1,50 @@
+[
+  {
+    "label": "首页",
+    "key": "index",
+    "path": "/",
+    "enabled" : true
+  },
+  {
+    "label": "随笔",
+    "key": "essay",
+    "path": "/essay",
+    "enabled" : true
+  },
+  {
+    "label": "博客",
+    "key": "blog",
+    "path": "/blog",
+    "enabled" : true
+  },
+  {
+    "label": "留言版",
+    "key": "message-board",
+    "path": "/message-board",
+    "enabled" : true
+  },
+  {
+    "label": "作品集",
+    "key": "portfolio",
+    "path": "/portfolio",
+    "enabled" : true
+  },
+  {
+    "label": "关于我",
+    "key": "about-me",
+    "path": "/about-me",
+    "enabled" : true
+  },
+  {
+    "label": "关于网站",
+    "key": "about-site",
+    "path": "/about-site",
+    "enabled" : true
+  },
+  {
+    "label": "登录",
+    "key": "sign-in",
+    "path": "/sign-in",
+    "enabled" : true
+  }
+]

@@ -2,22 +2,22 @@
     width: 1000px;
     margin: 0;
     .hello {
-        font-size: 20px;
+        font-size: 22px;
     }
     .name {
-        font-size: 40px;
+        font-size: 42px;
     }
     .question {
-        font-size: 20px;
+        font-size: 22px;
     }
     .answer {
-        font-size: 20px;
+        font-size: 22px;
     }
     .hobby {
-        font-size: 40px;
+        font-size: 42px;
     }
     .maxim {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
@@ -25,6 +25,7 @@
     margin-left: 0px;
     color: white;
     letter-spacing: 5px;
+    line-height: 1.6;
 }
 
 .color-517FE8 {

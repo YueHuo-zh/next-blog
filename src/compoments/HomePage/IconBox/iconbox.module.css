@@ -1,0 +1,9 @@
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.icon-item {
+  margin: 20px 0px 20px 5px;
+}

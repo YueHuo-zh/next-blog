@@ -36,7 +36,7 @@ const TextBox: React.FC<TextBoxProps> = ({ }) => {
                 <span>{ 'Ciallo～(∠・ω< )⌒☆' }, 这里是<span className={styles['color-517FE8']}>月火</span>的避难所</span>
             </div>
             <div className={`${styles.question} ${styles['text-box-item']}`}>
-                一名<span className={styles['color-517FE8']}> 全沾牛马 </span>😭。
+                每天都在想着如何<span className={styles['color-517FE8']}>跑路</span>😎。
             </div>
             <div className={`${styles.hobby} ${styles['text-box-item']}`}>
                 <span>喜欢 <span className={styles['color-57C3DC']}>React</span>、<span className={styles['color-3177C5']}>TypeScript</span>、<span className={styles['color-C85008']}>Rust</span> ...</span>

@@ -16,3 +16,21 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
 }
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+ul,ol {
+  list-style: none;
+}
+

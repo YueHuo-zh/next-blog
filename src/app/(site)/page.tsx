@@ -4,6 +4,7 @@ import TextBox from "@/compoments/HomePage/TextBox/TextBox";
 import AnimationBox from "@/compoments/HomePage/AnimationBox/AnimationBox"
 import styles from "./page.module.css";
 import { Github, Tv, Mail } from "@icon-park/react";
+import IconBox from "@/compoments/HomePage/IconBox/IconBox";
 
 type Icon = {
   icon: React.ReactNode;
@@ -44,7 +45,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <TextBox />
-      {/* <IconBox icons={IconArray} /> */}
+      <IconBox icons={IconArray} />
       <AnimationBox />
     </main>
   );

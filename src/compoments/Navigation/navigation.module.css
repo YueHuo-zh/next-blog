@@ -1,0 +1,21 @@
+.navigation {
+  width: 100%;
+  height: 60px;
+  color: #ffffffc2;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.navigation-content {
+  height: 100%;
+  width: 80%;
+  min-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text:hover {
+  color: #ffffff;
+}
