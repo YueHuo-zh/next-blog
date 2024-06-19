@@ -1,0 +1,53 @@
+.footer {
+  width: 100%;
+  padding: 20px;
+  color: #ffffffc2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.footer-links-item {
+  font-size: 13px;
+  color: #61666A;
+  margin: 0 10px;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-link {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #61666A;
+}
+
+.footer-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-email {
+  color: #61666A; /* Adjust the color to fit your design */
+  display: block; /* Make email appear on its own line */
+  margin-top: 10px; /* Add 10px spacing between copyright and email */
+}
+
+.footer-email-link {
+  color: #61666A;
+}

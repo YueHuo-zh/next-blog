@@ -1,4 +1,4 @@
-import SiteLayout from "@/compoments/Layout/SiteLayout/SiteLaytou";
+import SiteLayout from "@/ui/Layout/SiteLayout/SiteLaytou";
 
 export default function Layout({
   children,

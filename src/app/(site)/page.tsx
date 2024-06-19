@@ -1,10 +1,10 @@
 'use client'
 
-import TextBox from "@/compoments/HomePage/TextBox/TextBox";
-import AnimationBox from "@/compoments/HomePage/AnimationBox/AnimationBox"
+import TextBox from "@/ui/HomePage/TextBox/TextBox";
+import AnimationBox from "@/ui/HomePage/AnimationBox/AnimationBox"
 import styles from "./page.module.css";
-import { Github, Tv, Mail } from "@icon-park/react";
-import IconBox from "@/compoments/HomePage/IconBox/IconBox";
+import { Github, Tv, Mail, Twitter } from "@icon-park/react";
+import IconBox from "@/ui/HomePage/IconBox/IconBox";
 
 type Icon = {
   icon: React.ReactNode;
@@ -37,6 +37,12 @@ export default function Home() {
           alert("复制失败")
           console.log(err)
         })
+      }
+    },
+    {
+      icon: <Twitter key={3} size={25} />,
+      onClick: () => {
+        window.open('https://x.com/NewPlayer9481');
       }
     },
   ];

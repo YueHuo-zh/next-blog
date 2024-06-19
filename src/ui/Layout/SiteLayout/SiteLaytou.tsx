@@ -1,8 +1,8 @@
 'use client';
 
 import styles from "./sitelayout.module.css";
-import Navigation from "@/compoments/Navigation/Navigation";
-import Footer from "@/compoments/Footer/Footer";
+import Navigation from "@/ui/Navigation/Navigation";
+import Footer from "@/ui/Footer/Footer";
 
 export default function SiteLayout(
   {
