@@ -1,4 +1,4 @@
-import styles from "./notos.module.css"
+import styles from "./feed.module.css"
 
 
 export default function NotesPage() {
