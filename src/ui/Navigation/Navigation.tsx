@@ -2,7 +2,7 @@ import styles from "./navigation.module.css";
 import Navlinks from "./NavigationLink/Navlinks";
 import initLinks from "./links.json";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 interface NavigationProps { }
@@ -11,7 +11,16 @@ const Navigation: React.FC<NavigationProps> = () => {
 
   const [links, setLinks] = useState(initLinks);
 
-  console.log(links);
+  const [logined, setLogined] = useState(false);
+
+  useEffect(() => {
+    const newLinks = links.map((link) => {
+      if (link.key === 'sign-in') {
+        link.enabled = !logined
+      }
+      return link
+    })
+  }, [links, logined])
 
   return (
     <div className={styles['navigation']}>

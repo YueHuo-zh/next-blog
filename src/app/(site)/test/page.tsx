@@ -35,6 +35,14 @@ export default function Page() {
         <Button className={styles["button-item"]} secendary type="info" >info</Button>
         <Button className={styles["button-item"]} secendary type="error" >error</Button>
       </div>
+      <div>
+        <Button className={styles["button-item"]} type="default" width={200} height={100}>default</Button>
+        <Button className={styles["button-item"]} type="success" width={200} height={100}>success</Button>
+        <Button className={styles["button-item"]} type="primary" width={200} height={100}>primary</Button>
+        <Button className={styles["button-item"]} type="warning" width={200} height={100}>warning</Button>
+        <Button className={styles["button-item"]} type="info" width={200} height={100}>info</Button>
+        <Button className={styles["button-item"]} type="error" width={200} height={100}>error</Button>
+      </div>
     </>
   );
 }

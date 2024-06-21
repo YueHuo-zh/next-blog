@@ -1,0 +1,62 @@
+.article {
+  max-width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  text-align: left; /* 确保文章内容左对齐 */
+}
+
+.header,
+.section,
+.footer {
+  margin-bottom: 20px;
+}
+
+.h1,
+.h2,
+.p, /* 添加了对段落的左对齐 */
+.li { /* 添加了对列表项的左对齐 */
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: left; /* 文本左对齐 */
+}
+
+.h1 {
+  font-size: 24px;
+}
+
+.h2 {
+  font-size: 20px;
+}
+
+.ul {
+  padding-left: 20px;
+}
+
+.footer {
+  text-align: center; /* 页脚内容依然居中对齐 */
+}
+
+.a {
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.a:hover {
+  color: var(--link-hover-color);
+}
+
+.technologyUse {
+  background-color: #1C1F23;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.tip {
+  background-color: #282D30;
+  color: #76B900;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}

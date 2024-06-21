@@ -4,10 +4,10 @@ import styles from "./navlinks.module.css"
 import clsx from "clsx"
 
 type Links = {
-  label:string,
-  key:string,
-  path:string,
-  enabled:boolean
+  label: string,
+  key: string,
+  path: string,
+  enabled: boolean
 }
 
 interface NavlinksProps {
@@ -18,12 +18,15 @@ interface NavlinksProps {
 const Navlinks: React.FC<NavlinksProps> = ({ links, className }) => {
 
   const Navlink = links?.map((link, index) => {
-    return (
+    let item = (
       <li key={link.key} className={styles['navigation-links-item']}>
         <Button size="small" text>
           <Link href={link.path}>{link.label}</Link>
         </Button>
       </li>
+    )
+    return (
+      link.enabled ? item : null
     )
   })
 

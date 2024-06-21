@@ -1,0 +1,31 @@
+.container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #282D30;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.intro, .skills, .achievements, .interests, .contact {
+  margin-bottom: 20px;
+}
+
+.title, .subtitle {
+  color: #1A94E6;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.listItem {
+  line-height: 1.6;
+}
+
+.paragraph {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}

@@ -6,9 +6,9 @@
     "enabled" : true
   },
   {
-    "label": "随笔",
-    "key": "notes",
-    "path": "/notes",
+    "label": "动态",
+    "key": "feed",
+    "path": "/feed",
     "enabled" : true
   },
   {

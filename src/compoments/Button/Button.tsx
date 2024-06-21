@@ -11,6 +11,8 @@ interface ButtonProps {
   children: React.ReactNode,
   text?: boolean,
   size?: size | undefined,
+  width ?: number | string,
+  height ?: number | string,
   type?: type | undefined,
   secendary?: boolean,
   bordered?: boolean,
@@ -18,7 +20,7 @@ interface ButtonProps {
   className?: string | Array<string>,
 }
 
-const Button: React.FC<ButtonProps> = ({ size = "medium", bordered = true, type = "default", ...props }) => {
+const Button: React.FC<ButtonProps> = ({ size = "medium", bordered = true, type = "default", width, height, ...props }) => {
 
   const sizeClass = clsx(
     {
@@ -64,13 +66,21 @@ const Button: React.FC<ButtonProps> = ({ size = "medium", bordered = true, type 
   );
 
   const currentClass = props.text ? textClass : normalClass;
+
+  const inlineStyle = {
+    width: typeof width === 'number' ? `${width}px` : width,
+    height: typeof height === 'number' ? `${height}px` : height,
+  };
+
   return (
-    <button className={
-      currentClass
-    }
-      onClick={props.onClick}
+    <button 
+      className={
+        currentClass
+      }
+      onClick={ props.onClick }
+      style={ inlineStyle }
     >
-      {props.children}
+      { props.children }
     </button>
   );
 }
