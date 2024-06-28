@@ -1,0 +1,19 @@
+.blogContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftPanel,
+.rightPanel {
+  flex: 1;
+}
+
+/* 为了更好的视觉效果，可以给两个面板之间添加一些间距 */
+.leftPanel {
+  margin-right: 20px;
+}
+
+/* 根据需要调整 */
+.rightPanel {
+  width: 300px; /* 或其他宽度，取决于你的设计需求 */
+}

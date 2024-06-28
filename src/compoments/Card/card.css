@@ -1,0 +1,19 @@
+.card {
+  
+}
+
+.bordered {
+  border: 1px solid #61666A;
+}
+
+.card-header {
+  width: 100%;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.card-footer {
+  width: 100%;
+}

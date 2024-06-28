@@ -2,6 +2,7 @@
 
 import React from "react";
 import Button from "../../../compoments/Button/Button";
+import Card from "@/compoments/Card/Card";
 import styles from "./test.module.css";
 
 export default function Page() {
@@ -42,6 +43,12 @@ export default function Page() {
         <Button className={styles["button-item"]} type="warning" width={200} height={100}>warning</Button>
         <Button className={styles["button-item"]} type="info" width={200} height={100}>info</Button>
         <Button className={styles["button-item"]} type="error" width={200} height={100}>error</Button>
+      </div>
+
+      <div>
+        <Card bordered={true} width={200} height={200}>
+          Hello, There is Card
+        </Card>
       </div>
     </>
   );

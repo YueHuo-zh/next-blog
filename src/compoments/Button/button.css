@@ -1,3 +1,8 @@
+:root {
+  --text-color: #EEE;
+  --border-color: #2F7C54;
+}
+
 /*大小*/
 .small {
   width: 80px;
@@ -21,7 +26,7 @@
 .default-type {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0);
-  color: #c0c9d1;
+  color: var(--text-color);
 }
 .success-type {
   border-radius: 5px;
@@ -64,8 +69,8 @@
 
 .secendary.success-type {
   border: none;
-  background-color: #62E2B655;
-  color: #78ddba;
+  background-color: #8ff8d355;
+  color: #5FD195;
 }
 
 .secendary.warning-type {
